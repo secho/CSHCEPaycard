@@ -1,7 +1,7 @@
 <host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
                    android:description="@string/servicedesc"
                    android:requireDeviceUnlock="false"
-                   android:apduServiceBanner="@drawable/my_banner">
+                   android:apduServiceBanner="@android:drawable/sym_def_app_icon">
     <aid-group android:description="@string/aiddescription"
                android:category="payment">
 
