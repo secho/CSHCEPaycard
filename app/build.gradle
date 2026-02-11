@@ -1,5 +1,7 @@
 buildscript {
     repositories {
+        maven { url "https://dl.google.com/dl/android/maven2/" }
+        mavenCentral()
         jcenter()
     }
     dependencies {
@@ -9,12 +11,14 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
+    maven { url "https://dl.google.com/dl/android/maven2/" }
+    mavenCentral()
     jcenter()
 }
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "cz.csas.android.hcepaycard.app"
