@@ -4,25 +4,30 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.cardemulation.CardEmulation;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import androidx.appcompat.app.AppCompatActivity;
 import services.MyHostApduService;
 
 
-public class Dashboard extends ActionBarActivity {
+public class Dashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this);
+        if (nfcAdapter == null) {
+            Log.w("Default app:", "NFC adapter unavailable on this device");
+            return;
+        }
 
-        CardEmulation cardEmulationManager = CardEmulation.getInstance(NfcAdapter.getDefaultAdapter(this));
+        CardEmulation cardEmulationManager = CardEmulation.getInstance(nfcAdapter);
         ComponentName paymentServiceComponent =
-                new ComponentName(getApplicationContext(), MyHostApduService.class.getCanonicalName());
+                new ComponentName(this, MyHostApduService.class);
 
         if (!cardEmulationManager.isDefaultServiceForCategory(paymentServiceComponent, CardEmulation.CATEGORY_PAYMENT)) {
             Intent intent = new Intent(CardEmulation.ACTION_CHANGE_DEFAULT);

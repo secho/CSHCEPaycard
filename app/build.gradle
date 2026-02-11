@@ -1,46 +1,33 @@
-buildscript {
-    repositories {
-        maven { url "https://dl.google.com/dl/android/maven2/" }
-        mavenCentral()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
-    }
-}
-apply plugin: 'com.android.application'
-
-repositories {
-    maven { url "https://dl.google.com/dl/android/maven2/" }
-    mavenCentral()
-    jcenter()
+plugins {
+    id 'com.android.application'
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "28.0.3"
+    namespace "cz.csas.android.hcepaycard.app"
+    compileSdk 34
 
     defaultConfig {
         applicationId "cz.csas.android.hcepaycard.app"
         minSdkVersion 19
-        targetSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.0'
 }
