@@ -1,6 +1,19 @@
 # CSHCEPaycard
 
+[![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](https://developer.android.com/)
+[![Min SDK](https://img.shields.io/badge/minSdk-21-blue)](#platform-requirements)
+[![Target SDK](https://img.shields.io/badge/targetSdk-34-blue)](#platform-requirements)
+[![Build](https://img.shields.io/badge/build-Gradle%208.2.1%20%7C%20AGP%208.2.2-02303A?logo=gradle)](#build-instructions)
+[![NFC](https://img.shields.io/badge/NFC-HCE%20Enabled-informational)](#feature-set)
+[![Usage](https://img.shields.io/badge/usage-Research%20Only-critical)](#important-disclaimer-read-first)
+
 Android research application for **NFC card exploration** and **Host Card Emulation (HCE)** payment-profile simulation.
+
+---
+
+## App Screenshot
+
+![HCE Paycard Dashboard](docs/images/app-dashboard-screenshot.svg)
 
 ---
 
