@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1008" viewBox="0 0 960 1008">
+  <defs>
+    <style>
+      .title { font: 700 22px Arial, sans-serif; fill: #f3f3f3; }
+      .h1 { font: 700 20px Arial, sans-serif; fill: #5e5e5e; }
+      .h2 { font: 700 18px Arial, sans-serif; fill: #5e5e5e; }
+      .txt { font: 400 18px Arial, sans-serif; fill: #5f5f5f; }
+      .btn { font: 700 16px Arial, sans-serif; fill: #202020; text-anchor: middle; }
+      .hint { font: 400 16px Arial, sans-serif; fill: #8a8a8a; }
+    </style>
+  </defs>
+
+  <rect width="960" height="1008" fill="#f3f3f3"/>
+  <rect x="0" y="0" width="960" height="88" fill="#1f1f1f"/>
+  <text x="32" y="54" class="title">HCE Paycard</text>
+
+  <text x="24" y="132" class="h1">Select a stored card first.</text>
+  <text x="24" y="166" class="txt">Real bank-card cloning is not supported; this uses demo HCE profile emulation.</text>
+
+  <rect x="24" y="190" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <rect x="482" y="190" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <text x="241" y="222" class="btn">SCAN NFC CARD</text>
+  <text x="699" y="222" class="btn">SET APP AS DEFAULT WALLET</text>
+
+  <text x="24" y="282" class="h2">Scanned card data</text>
+  <rect x="24" y="292" width="892" height="50" fill="#e8e8e8"/>
+  <text x="32" y="324" class="txt">No card scanned yet.</text>
+
+  <text x="24" y="392" class="txt">Card name (e.g. Test Visa)</text>
+  <line x1="24" y1="402" x2="916" y2="402" stroke="#6d6d6d" stroke-width="2"/>
+
+  <text x="24" y="462" class="txt">Swipe data for HCE payment emulation</text>
+  <line x1="24" y1="486" x2="916" y2="486" stroke="#6d6d6d" stroke-width="2"/>
+
+  <rect x="24" y="516" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <rect x="482" y="516" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <text x="241" y="548" class="btn">SAVE SCANNED CARD</text>
+  <text x="699" y="548" class="btn">USE SELECTED FOR PAYMENT</text>
+
+  <rect x="24" y="590" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <rect x="482" y="590" width="434" height="52" rx="4" fill="#d7d7d7"/>
+  <text x="241" y="622" class="btn">DELETE SELECTED CARD</text>
+  <text x="699" y="622" class="btn">CLEAR ALL CARDS</text>
+
+  <text x="24" y="684" class="h2">Stored cards</text>
+  <rect x="24" y="694" width="892" height="210" fill="#f3f3f3" stroke="#dfdfdf" stroke-width="1"/>
+
+  <text x="24" y="948" class="h2">Selected card details</text>
+  <rect x="24" y="956" width="892" height="44" fill="#e8e8e8"/>
+  <text x="32" y="985" class="txt">No stored card selected.</text>
+
+  <text x="24" y="1002" class="hint">Representative dashboard screenshot from the current app build.</text>
+</svg>
