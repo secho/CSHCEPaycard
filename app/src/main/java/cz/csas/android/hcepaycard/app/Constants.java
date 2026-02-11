@@ -11,4 +11,10 @@ public class Constants {
     //  klic pro app preference
     //
     public static final String SWIPE_DATA_PREF_KEY = "SWIPE_DATA";
+
+    // Stored cards JSON payload in preferences.
+    public static final String STORED_CARDS_PREF_KEY = "STORED_CARDS_JSON";
+
+    // Active card identifier used for HCE emulation selection.
+    public static final String ACTIVE_CARD_ID_PREF_KEY = "ACTIVE_CARD_ID";
 }

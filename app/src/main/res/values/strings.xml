@@ -2,13 +2,54 @@
 <resources>
 
     <string name="app_name">HCE Paycard</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="servicedesc">Test payment serv</string>
     <string name="aiddescription">Test payment serv</string>
     <string name="Visa">VISA</string>
     <string name="Mastercard">Mastercard</string>
     <string name="PPSE">Proximity payments</string>
-
+    <string name="status_ready">Ready. Tap "Scan NFC card" and place a card on the back of the phone.</string>
+    <string name="status_nfc_unavailable">NFC is not available on this device.</string>
+    <string name="status_scanning">Scanning... keep the card near the NFC antenna.</string>
+    <string name="status_scan_stopped">Scan stopped.</string>
+    <string name="status_card_scanned">Card scanned. Review data and save it.</string>
+    <string name="status_card_saved">Card saved.</string>
+    <string name="status_card_deleted">Card deleted.</string>
+    <string name="status_all_cards_cleared">All stored cards cleared.</string>
+    <string name="status_card_activated">Selected card is now active for HCE payment emulation.</string>
+    <string name="status_default_wallet_requested">Android default wallet selection opened.</string>
+    <string name="status_already_default_wallet">This app is already default for payment.</string>
+    <string name="status_no_card_selected">Select a stored card first.</string>
+    <string name="status_no_scanned_card">Scan a card first.</string>
+    <string name="status_invalid_swipe_data">Swipe data must include Track2 format: ;PAN=...?</string>
+    <string name="status_reader_error">Reader error while scanning card.</string>
+    <string name="hint_card_name">Card name (e.g. Test Visa)</string>
+    <string name="hint_swipe_data">Swipe data for HCE payment emulation</string>
+    <string name="button_scan_card">Scan NFC card</string>
+    <string name="button_stop_scan">Stop scan</string>
+    <string name="button_default_wallet">Set app as default wallet</string>
+    <string name="button_save_card">Save scanned card</string>
+    <string name="button_use_selected_card">Use selected for payment</string>
+    <string name="button_delete_selected_card">Delete selected card</string>
+    <string name="button_clear_all_cards">Clear all cards</string>
+    <string name="title_scanned_card_data">Scanned card data</string>
+    <string name="title_stored_cards">Stored cards</string>
+    <string name="title_selected_card_data">Selected card details</string>
+    <string name="placeholder_no_scan">No card scanned yet.</string>
+    <string name="placeholder_no_selected_card">No stored card selected.</string>
+    <string name="label_active_card">ACTIVE</string>
+    <string name="scan_data_uid">UID</string>
+    <string name="scan_data_tech">Tech</string>
+    <string name="scan_data_aids">AIDs</string>
+    <string name="scan_data_ndef">NDEF</string>
+    <string name="scan_data_ppse_response">PPSE</string>
+    <string name="scan_data_notes">Notes</string>
+    <string name="card_prefix">Card</string>
+    <string name="detail_name">Name</string>
+    <string name="detail_saved">Saved</string>
+    <string name="detail_swipe_data">Swipe data</string>
+    <string name="detail_none">-</string>
+    <string name="separator_bullet"> • </string>
+    <string name="warning_real_payment_limit">Real bank-card cloning is not supported; this uses demo HCE profile emulation.</string>
 
 </resources>
